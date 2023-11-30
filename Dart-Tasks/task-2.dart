@@ -35,9 +35,6 @@ int calculateSum(List<int> nums) {
 }
 
 double calculateAverage(List<int> nums) {
-  int sum = 0;
-  for (int i in nums) {
-    sum += i;
-  }
+  int sum = calculateSum(nums);
   return sum / nums.length;
 }
